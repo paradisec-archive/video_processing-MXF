@@ -1,5 +1,5 @@
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
 # MXF
+
 **_Creating lossless JPEG2000 .MXF videos with Adobe Media Encoder (CC 2018 or later)_**
 
 *[PARADISEC](https://paradisec.org) adheres to the current best-practice standards for video archiving as set by the International Association of Sound and Audiovisual Archives [(IASA)](https://www.iasa-web.org/).*
