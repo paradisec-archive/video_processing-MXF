@@ -1,5 +1,3 @@
-<link rel="icon" href="favicon.ico">
-
 # MXF
 **_Creating lossless JPEG2000 .MXF videos with Adobe Media Encoder (CC 2018 or later)_**
 
