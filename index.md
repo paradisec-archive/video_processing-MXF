@@ -118,18 +118,16 @@ You can see in the upper left corner that there is some quality reporting. Pay s
 ---
 
 ### Explanation of the Specifications used to create lossless MXF
-* **JPEG 2000 MXF OP1a** is the MXF (Material Exchage Format) Operational Pattern 1a (OP1a), with lossles JPEG 2000 in a generic container *(for more information see: http://www.digitizationguidelines.gov/guidelines/MXF_app_spec.html*.
+* **JPEG 2000 MXF OP1a** is the MXF (Material Exchage Format) Operational Pattern 1a (OP1a), with lossles JPEG 2000 in a generic container *(for more information see the Federal Agencies Digital Guidelines Initiative [FADGI](http://www.digitizationguidelines.gov/guidelines/MXF_app_spec.html))* 
 
-* **YUV 4:2:2** with a depth of **8 bit** is the *Chroma Subsampling* suggested by IASA for born-digital .MXF. **Y** (or often **Y′**) stands for the *luma*, or *brightness*, *component*; **U** and **V** are the two *colour components*. YUV colour encoding takes into consideration human perception thus creating an output that has masked any human-noticable distortions *(for more information: https://en.wikipedia.org/wiki/YUV)*.
+* **YUV 4:2:2** with a depth of **8 bit** is the *Chroma Subsampling* suggested by IASA for born-digital .MXF. **Y** (or often **Y′**) stands for the *luma*, or *brightness*, *component*; **U** and **V** are the two *colour components*. YUV colour encoding takes into consideration human perception thus creating an output that has masked any human-noticable distortions *(for more information see [YUV](https://en.wikipedia.org/wiki/YUV))*.
 
-* **4:2:2** denotes the *vertical* and *horizontal subsampling* *(for more information:
-https://poynton.ca/PDFs/Chroma_subsampling_notation.pdf)*.
+* **4:2:2** denotes the *vertical* and *horizontal subsampling* *(for more information read Charles Poynton's work on Chroma subsampling [HERE](https://poynton.ca/PDFs/Chroma_subsampling_notation.pdf))*.
 
 * **8-bits** per channel is typically the *bit depth* for many of the original .MOV, .MTS, .AVI, .MP4, etc. video files we handle. Using a 10-bit depth would needlessly increase the file-size while adding no improved quality.
 
 * **Broadcast profile** determines the maximum sampling and bit rates of the output file. **Level 6 lossless (L6)** is 520 Msamples/s and 1600Mbits/s. **Level 7 lossless (L7)** is 520 Msamples /s and and unspecified Max Bitrate.
 
-* For further information of the **Media Encoder export settings** mentioned above:
-*https://helpx.adobe.com/au/media-encoder/using/export-settings-reference.html*.
+* For further information of the **Media Encoder export settings** mentioned above look [HERE](https://helpx.adobe.com/au/media-encoder/using/export-settings-reference.html).
 
 [Return to top of page](https://paradisec-archive.github.io/video_processing-MXF/)
