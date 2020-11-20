@@ -3,14 +3,14 @@
 
 *[PARADISEC](https://paradisec.org) adheres to the current best-practice standards for video archiving as set by the International Association of Sound and Audiovisual Archives [(IASA)](https://www.iasa-web.org/).*
 
-### Define Encoding Settings - Making an Encoding Preset
+## Define Encoding Settings - Making an Encoding Preset
 The first thing we need to do is select the settings that we can use each time we want to create a lossless J2K .MXF video. To do this, we need to create an Encoding Preset. Go to the top Media Encoder CC menu to “Presets” and then select “Create Encoding Preset”. A new Preset window will open up. Look at the image below to see the settings you should choose. Each will be explained below.
 
 <p align="center">
   <img width="500" src="images/presets-video.jpg" alt="Screenshot of Adobe Media Encoder video presets window">
 </p>
 
-### Preset name and format
+## Preset name and format
 First you should give the preset a meaningful name, I have chosen **Lossless J2k (8-bit)**. The main reason for this particular name is to differentiate this preset from others you might use for different workflows (I will discus why I add the distinction **8-bit** below).
 
 For the format, select **JPEG 2000 MXF OP1a**. Once you select this format, you are then offered these choices for the *Based on Preset* field:
@@ -24,7 +24,7 @@ You can leave the new default of **RGBA 4:4:4:4 12-bit (BCs@L5)**. This value wi
 Leave the remaining settings in this section as their defaults (*Comments* field left blank, *Export Video* and *Export Audio* boxes ticked).
 
 
-### Video settings
+## Video settings
 Edit only settings in the Video and Audio tabs. Settings in the other tabs (Effects, Captions, Publish) should be left untouched.
 
 Because we selected the **JPEG 2000 MXF OP1a** format above, the video codec will automatically be set to **JPEG 2000** in this section. The basic video settings options will have changed to those appropriate for this format.
@@ -46,7 +46,7 @@ Make certain **Match Source** is selected, this will automatically tick all the 
 </p>
 
 
-### Audio settings
+## Audio settings
 There are not many adjustments that need to be made to the audio settings (see image below). The *Audio Codec* will already be set to **Uncompressed** with a *Sample Rate* of **48,000 Hz**. due to the choice of the video format of **JPEG 2000 MXF OP1a**.
 
 <p align="center">
@@ -56,7 +56,7 @@ There are not many adjustments that need to be made to the audio settings (see i
 Make certain the *Channels* field is set to **2**. If you are given a video that has been recorded with surround sound, there could be as many as 6 channels. Our standard is to have 2 channel stereo audio output for our .MXF files. 6 channel video files have caused problems for editing/playback in programs such as Adobe Premiere, etc. Then Set the *Sample Size* to **24 bit**.
 
 
-### The remaining settings
+## The remaining settings
 The remaining settings located underneath the tab area should all be left with the default settings (see image below). This means that the following boxes should all be left unticked: *Use Maximum Render Quality*, *Use Previews*, *Set Start Timecode*, and *Render Alpha Channel Only*.
 
 <p align="center">
@@ -66,7 +66,7 @@ The remaining settings located underneath the tab area should all be left with t
 Leave the *Time Interpolation* set to **Frame Sampling**. This settings handles motion smoothing if you change the output file’s frames per second.
 
 
-### Using MediaInfo to check your output file metadata
+## Using MediaInfo to check your output file metadata
 
 MediaInfo is the best method to access all of the file specifications you need in order to understand the structure of your media files. You should know the underlying specifications of your original file before you do any transcoding. This ensures that you are able to set your output settings to match the relevant specs of the original. Below is a side-by-side comparison of the MediaInfo outputs, with added red asterisks to highlight some of the specs to be aware of:
 
@@ -99,7 +99,7 @@ Once you transcode the original file to an .MXF, you will need to take a look at
 
 > **Note:** You can do this in batches, as MediaInfo allows you to open multiple files at one time. On a Mac, you get one MediaInfo window with a dropdown menu to select which file you want to see in the active report; on Windows, separate MediaInfo windows will open for each file selected.
 
-### Using an MXF player to check the quality of your newly created file
+## Using an MXF player to check the quality of your newly created file
 
 Once you have checked the file metadata with MediaInfo, you will need to play through the entire video to see if there were any issues in your transcoding process. I have created a lossless .MXF that had playback issues, so this step in the quality checking process in very important. Unfortunately, there are not many players that can handle .MXF-formatted video. You need to find a player that lets you see if there is jumpy playback, dropped frames, or any other errors. 
 
@@ -117,7 +117,7 @@ You can see in the upper left corner that there is some quality reporting. Pay s
 
 ---
 
-### Explanation of the Specifications used to create lossless MXF
+## Explanation of the Specifications used to create lossless MXF
 * **JPEG 2000 MXF OP1a** is the MXF (Material Exchage Format) Operational Pattern 1a (OP1a), with lossles JPEG 2000 in a generic container *(for more information see the Federal Agencies Digital Guidelines Initiative [FADGI](http://www.digitizationguidelines.gov/guidelines/MXF_app_spec.html))* 
 
 * **YUV 4:2:2** with a depth of **8 bit** is the *Chroma Subsampling* suggested by IASA for born-digital .MXF. **Y** (or often **Y′**) stands for the *luma*, or *brightness*, *component*; **U** and **V** are the two *colour components*. YUV colour encoding takes into consideration human perception thus creating an output that has masked any human-noticable distortions *(for more information see [YUV](https://en.wikipedia.org/wiki/YUV))*.
