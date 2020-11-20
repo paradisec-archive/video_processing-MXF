@@ -1,23 +1,7 @@
-# Video Transcoding and Rewrapping Workflows for PARADISEC Archive
+# MXF
+**_Creating lossless JPEG2000 .MXF videos with Adobe Media Encoder (CC 2018 or later)_**
 
 *[PARADISEC](https://paradisec.org) adheres to the current best-practice standards for video archiving as set by the International Association of Sound and Audiovisual Archives [(IASA)](https://www.iasa-web.org/).*
-
-## Video Formats
-PARADISEC accepts video content from our depositors that are analogue and need to be digitised as well as videos that are born-digital and need further transcoding or rewrapping. All analogue video digitising is sent to a commercial service provider for processing ([DAMSmart!](https://www.damsmart.com.au/)) We do all born-digital video processing in-house.
-
-* **Analogue tape and film** we have received for archiving include: VHS, VHS-C, Betamax, U-MATIC, MiniDV, Super8
-
-* **Digital file formats** we accept are the following: .MP4, .MPEG, .MPEG1, .MP2, .MPG, .M4V, .OGG, .MTS, .AVCHD, .AVI, .MOV, .QT, .DV, .WEBM, .WMV
-
-We create two digital copies for each video we receive:
-
-* .MXF (lossless JPEG2000) as an archival file
-* .MP4 (H.264) as an access file
-
-Below I outline PARADISEC's workflow for creating the two digital copies that come from a _born-digital_ source and go into our archive.
-
-## MXF
-**_Creating lossless JPEG2000 .MXF videos with Adobe Media Encoder (CC 2018 or later)_**
 
 ### Define Encoding Settings - Making an Encoding Preset
 The first thing we need to do is select the settings that we can use each time we want to create a lossless J2K .MXF video. To do this, we need to create an Encoding Preset. Go to the top Media Encoder CC menu to “Presets” and then select “Create Encoding Preset”. A new Preset window will open up. Look at the image below to see the settings you should choose. Each will be explained below.
