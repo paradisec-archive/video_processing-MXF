@@ -71,7 +71,7 @@ Leave the *Time Interpolation* set to **Frame Sampling**. This settings handles 
 MediaInfo is the best method to access all of the file specifications you need in order to understand the structure of your media files. You should know the underlying specifications of your original file before you do any transcoding. This ensures that you are able to set your output settings to match the relevant specs of the original. Below is a side-by-side comparison of the MediaInfo outputs, with added red asterisks to highlight some of the specs to be aware of:
 
 <p align="center">
-  <img width="800" src="images/MediaInfo-MTS_MXF.jpg" alt="Side-by-side comparison of MediaInfo screenshots for .MTS and .MXF video files">
+  <img width="1000" src="images/MediaInfo-MTS_MXF.jpg" alt="Side-by-side comparison of MediaInfo screenshots for .MTS and .MXF video files">
 </p>
 
 I have pulled out some of those specs for comparison in the table below. You will be creating a video that has an increased **_file size_** from the original; this is because the **_bitrate_** will have increased substantially due to the transcoding process for lossless .MXF. The **_durations_** need to be similar (within +/- 500ms).  Unless you clear any changes in specifications with the depositor first, you will need to keep the following specs the same: **_aspect ratio_**, **_frame rate_**, **_color space_**, and **_bit depth_**.  The **_audio channels_** may change from the original; an original video with six audio channels (surround sound) is problematic in Adobe. If the depositor requires the six channels to remain, this workflow will not handle it. Another one will need to be configured. 
@@ -118,16 +118,19 @@ You can see in the upper left corner that there is some quality reporting. Pay s
 ---
 
 ### Explanation of the Specifications used to create lossless MXF
-* **JPEG 2000 MXF OP1a** is the MXF (Material Exchage Format) Operational Pattern 1a (OP1a), with lossles JPEG 2000 in a generic container *(for more information: https://www.loc.gov/preservation/digital/formats/fdd/fdd000206.shtml)*.
+* **JPEG 2000 MXF OP1a** is the MXF (Material Exchage Format) Operational Pattern 1a (OP1a), with lossles JPEG 2000 in a generic container *(for more information:
+https://www.loc.gov/preservation/digital/formats/fdd/fdd000206.shtml)*.
 
 * **YUV 4:2:2** with a depth of **8 bit** is the *Chroma Subsampling* suggested by IASA for born-digital .MXF. **Y** (or often **Y′**) stands for the *luma*, or *brightness*, *component*; **U** and **V** are the two *colour components*. YUV colour encoding takes into consideration human perception thus creating an output that has masked any human-noticable distortions *(for more information: https://en.wikipedia.org/wiki/YUV)*.
 
-* **4:2:2** denotes the *vertical* and *horizontal subsampling* *(for more information: https://poynton.ca/PDFs/Chroma_subsampling_notation.pdf)*.
+* **4:2:2** denotes the *vertical* and *horizontal subsampling* *(for more information:
+https://poynton.ca/PDFs/Chroma_subsampling_notation.pdf)*.
 
 * **8-bits** per channel is typically the *bit depth* for many of the original .MOV, .MTS, .AVI, .MP4, etc. video files we handle. Using a 10-bit depth would needlessly increase the file-size while adding no improved quality.
 
 * **Broadcast profile** determines the maximum sampling and bit rates of the output file. **Level 6 lossless (L6)** is 520 Msamples/s and 1600Mbits/s. **Level 7 lossless (L7)** is 520 Msamples /s and and unspecified Max Bitrate.
 
-* For further information of the **Media Encoder export settings** mentioned above: *https://helpx.adobe.com/au/media-encoder/using/export-settings-reference.html*.
+* For further information of the **Media Encoder export settings** mentioned above:
+*https://helpx.adobe.com/au/media-encoder/using/export-settings-reference.html*.
 
 [Return to top of page](https://paradisec-archive.github.io/video_processing-MXF/)
