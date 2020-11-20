@@ -83,15 +83,15 @@ Finally, the **_compression mode_** for the .MXF **MUST** indicate it is **_loss
 | :--------- | :--------- | :---------- |
 | ***Name*** | 00050.mts | 0005.mxf |
 | ***Format*** | BDAV | MXF |
-| ***Format Profile*** | Blu-Ray Video | OP-1a v1.2| 
+| ***Format profile*** | Blu-Ray Video | OP-1a v1.2| 
 | ***File size*** | 31.5 MiB  |  785 MiB  |
 | ***Duration***  | 37 s 350 ms | 37 s 440 ms  |
 | ***(Max.) Overall bitrate***  | 13.7 Mb/s  |  176 Mb/s  |
-| ***Aspect Ratio***  | 16:9  |  16:9  |
-| ***Frame Rate***  | 25 fps  |  25 fps  |
+| ***Aspect ratio***  | 16:9  |  16:9  |
+| ***Frame rate***  | 25 fps  |  25 fps  |
 | ***Color space***  | YUV  |  YUV  |
-| ***Chroma subampling***  | 4:2:0  |  4:2:2  |
-| ***BitDepth***  | 8 bits  |  8 bits  |
+| ***Chroma subsampling***  | 4:2:0  |  4:2:2  |
+| ***Bit depth***  | 8 bits  |  8 bits  |
 | ***Compression mode***  |  n/a  |  **LOSSLESS**  |
 | ***Audio channels***  |  2  |  2  |
 | ***Sampling rate***  | 48 kHz  |  48 kHz  |
