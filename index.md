@@ -32,7 +32,7 @@ Because we selected the **JPEG 2000 MXF OP1a** format above, the video codec wil
 
 Make certain **Match Source** is selected, this will automatically tick all the boxes below (if they are not already), retaining the same settings as those of the original file for the following fields *Width*, *Height*, *Frame Rate*, *Field Order*, and *Aspect [ratio]*.
 
-*Chroma* should be set to **YUV 4:2:2** with a *depth* of **8-bit**. In the rare case your original video has a colour depth of 10-bit, select the **10-bit** option. To determine the bit depth of a video, use [MediaInfo](https://mediaarea.net/en/MediaInfo) (more on MediaInfo [here](https://github.com/paradisec-archive/video_processing/blob/main/index.md#using-mediainfo-to-check-your-output-file-metadata)); the file’s bit depth is listed in the MediaInfo metadata output report.
+*Chroma* should be set to **YUV 4:2:2** with a *depth* of **8-bit**. In the rare case your original video has a colour depth of 10-bit, select the **10-bit** option. To determine the bit depth of a video, use [MediaInfo](https://mediaarea.net/en/MediaInfo); the file’s bit depth is listed in the MediaInfo metadata output report.
 
 > **Note:** If you are using CC2018: Set the Broadcast Profile to Level 6 (Lossless). This determines the maximum sampling and bit rates for the output file. You can see all the drop down choices offered below:
 
